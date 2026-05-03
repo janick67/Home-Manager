@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SrrGbbvPxP4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dell\\Dropbox\\smarthome\\Home Manager\\HomeManager.Application\\HomeManager.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

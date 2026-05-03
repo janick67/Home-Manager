@@ -1,0 +1,65 @@
+services:
+  mariadb:
+    image: mariadb:11.4
+    container_name: home-manager-mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: homemanager
+      MARIADB_USER: homemanager
+      MARIADB_PASSWORD: homemanager
+      MARIADB_ROOT_PASSWORD: root-password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  backend:
+    build:
+      context: .
+      dockerfile: HomeManager.Api/Dockerfile
+    container_name: home-manager-api
+    restart: unless-stopped
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__MariaDb: Server=mariadb;Port=3306;Database=homemanager;User=homemanager;Password=homemanager;
+      HomeAssistant__BaseUrl: http://homeassistant.local:8123
+      HomeAssistant__LongLivedAccessToken: ${HOME_ASSISTANT_TOKEN:-replace_me}
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 25s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: HomeManager.Frontend/Dockerfile
+    container_name: home-manager-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "4200:80"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+volumes:
+  mariadb_data:

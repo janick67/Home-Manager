@@ -1,0 +1,15 @@
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.csproj.AssemblyReference.cache
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.AssemblyInfoInputs.cache
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.AssemblyInfo.cs
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\bin\Debug\net8.0\HomeManager.Application.deps.json
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\bin\Debug\net8.0\HomeManager.Application.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\bin\Debug\net8.0\HomeManager.Application.pdb
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\bin\Debug\net8.0\HomeManager.Domain.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\bin\Debug\net8.0\HomeManager.Domain.pdb
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeMana.0064E8D3.Up2Date
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\refint\HomeManager.Application.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\HomeManager.Application.pdb
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Application\obj\Debug\net8.0\ref\HomeManager.Application.dll

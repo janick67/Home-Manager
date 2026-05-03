@@ -1,0 +1,11 @@
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.AssemblyInfoInputs.cache
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.AssemblyInfo.cs
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\bin\Debug\net8.0\HomeManager.Domain.deps.json
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\bin\Debug\net8.0\HomeManager.Domain.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\bin\Debug\net8.0\HomeManager.Domain.pdb
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\refint\HomeManager.Domain.dll
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\HomeManager.Domain.pdb
+C:\Users\Dell\Dropbox\smarthome\Home Manager\HomeManager.Domain\obj\Debug\net8.0\ref\HomeManager.Domain.dll
