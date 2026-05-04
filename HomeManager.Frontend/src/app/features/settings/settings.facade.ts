@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HomeManagerApiService } from '../../core/api/home-manager-api.service';
-import { SettingsDto } from '../../core/models/api.models';
+import { HomeAssistantEntityDto, SettingsDto } from '../../core/models/api.models';
 
 @Injectable()
 export class SettingsFacade {
@@ -13,5 +13,13 @@ export class SettingsFacade {
 
   saveSettings(settings: SettingsDto): Observable<void> {
     return this.api.updateSettings(settings);
+  }
+
+  getHaEntities(): Observable<HomeAssistantEntityDto[]> {
+    return this.api.getHaEntities();
+  }
+
+  refreshHaEntities(): Observable<{ refreshed: number }> {
+    return this.api.refreshHaEntities();
   }
 }

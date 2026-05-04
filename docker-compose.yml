@@ -4,12 +4,12 @@ services:
     container_name: home-manager-mariadb
     restart: unless-stopped
     environment:
-      MARIADB_DATABASE: homemanager
-      MARIADB_USER: homemanager
-      MARIADB_PASSWORD: homemanager
-      MARIADB_ROOT_PASSWORD: root-password
+      MARIADB_DATABASE: home_manager_db
+      MARIADB_USER: home_manager_app
+      MARIADB_PASSWORD: ${HOMEMANAGER_DB_PASSWORD:-home_manager_password}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:-home_manager_root_password}
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mariadb_data:/var/lib/mysql
     healthcheck:
@@ -29,13 +29,10 @@ services:
       mariadb:
         condition: service_healthy
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:8080
-      ConnectionStrings__MariaDb: Server=mariadb;Port=3306;Database=homemanager;User=homemanager;Password=homemanager;
-      HomeAssistant__BaseUrl: http://homeassistant.local:8123
-      HomeAssistant__LongLivedAccessToken: ${HOME_ASSISTANT_TOKEN:-replace_me}
+      ConnectionStrings__MariaDb: Server=mariadb;Port=3306;Database=home_manager_db;User=home_manager_app;Password=${HOMEMANAGER_DB_PASSWORD:-home_manager_password};
     ports:
-      - "8080:8080"
+      - "8081:8080"
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:8080/health"]
       interval: 15s
